@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet"  href="/cssfile/signup.css">
+</head>
+<body>
+    <div class="container">
+     <div class="title">Sign Up</div>
+      <form action="#" method="post">
+        <div class="user-details">
+          <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter Your Name" name="user_name">
+            </div>
+            
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter Your Email" name="user_email">
+          </div>
+          <div class="input-box">
+                      
+            <span class="details">Telephone/Mobile Number</span>
+            <select id="country" onclick="country_code();">
+                <option value="select country">select country</option>
+                <option value="IND" >IND</option>
+                <option value="JAPAN">JAPAN</option>
+                <option value="USA">USA</option>
+                <option value="NPL">NPL</option>
+                <option value="BANGLA">NPL</option>
+                <option value="UK">UK</option>
+                <option value="PAK">PAk</option>
+            </select>
+            <input type="tel" id="output" placeholder="Enter Your Number" pattern="[0-9]{10}" name="phone" required >
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter Your Password" maxlength="10" name="user_password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Re-Enter Your Password"minlength="7" >
+          </div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+    </form>
+    </div>
+    <script>
+        function country_code(){
+            var val= document.getElementById("country").value;
+            if (val === "select country"){
+                doucument.getElementById("output").value=" ";
+            }
+            else if (val === "IND"){
+                doucument.getElementById("output").value="+91";
+            }
+            else if (val === "JAPAN"){
+                doucument.getElementById("output").value="+81";
+            }
+            else if (val === "PAK"){
+                doucument.getElementById("output").value="+92";
+            }
+            else if (val === "UK"){
+                doucument.getElementById("output").value="+44";
+            }
+            else if (val === "USA"){
+                doucument.getElementById("output").value="+1";
+            }
+            else if (val === "NPL"){
+                doucument.getElementById("output").value="+977";
+            }
+            else (val === "BANGLA")
+            {
+                doucument.getElementById("output").value="+880";
+            }
+        }
+    </script>
+</body>

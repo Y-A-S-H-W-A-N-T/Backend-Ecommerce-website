@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING</title>
+    <link rel="stylesheet" href="/cssfile/home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/"><img src="fastcart.png" alt=""></a></li>
+        <% if(session.user_id)
+        { %>
+            <div class="reg">    
+                <li><a href="/cart"><img src="cart.png" alt=""></a></li>
+            </div>
+        <% }
+        else
+        { %>
+            <div class="reg">    
+                <li><a class="register" href="/signup">SIGN UP</a></li>
+                <li><a class="register" href="/login">LOGIN</a></li>
+                <li><a href="/cart"><img src="cart.png" alt=""></a></li>
+            </div>
+     <% } %>
+        </ul>
+     </nav>
+     <div class="search_bar">
+        <input type="search" placeholder="search....">
+        <a href=""><img src="search.png" alt=""></a>
+     </div>
+     <div class="add">
+        <img src="grocery.jpg" alt="">
+        <h1>Try out the new quick cart<a href="login.html">Quick Cart</a></h1>
+     </div>
+     <div class="main-scroll-div">
+        <div></div>
+        <div class="cover">
+            <div class="scroll-images">
+                <div class="child"><img class="child-images" src="clothes1.jpg" alt=""></div>
+                <div class="child"><img class="child-images" src="clothes2.jpg" alt=""></div>
+                <div class="child"><img class="child-images" src="clothes3.jpg" alt=""></div>
+                <div class="child"><img class="child-images" src="clothes4.jpg" alt=""></div>
+                <div class="child"><img class="child-images" src="clothes5.jpg" alt=""></div>
+            </div>
+        </div>
+        <div></div>
+     </div>
+     <footer>
+        <div>
+            <ul>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="contact.html">Help</a></li>
+                <li><a href="contact.html">More</a></li>
+                <li><a href="contact.html">About</a></li>
+            </ul>
+        </div>
+     </footer>
+</body>
+</html>

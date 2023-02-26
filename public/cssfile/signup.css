@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins'sans-serif;
+}
+body{
+    display: flex;
+    height: 800px;
+    justify-content:center;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    background-size: contain;
+}
+.container{
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding:25px 30px;
+    border-radius: 10px;
+}
+ .container .title{
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+ .title::before{
+    content: '';
+    position: relative;
+    left: 70px;
+    bottom: -35px;
+    height: 3px;
+    width: 35px;
+    background: #8d2176;
+}
+
+ form .user-details .input-box{
+    margin: 20px 0 12px 0;
+    width: calc(100%/2-20px);
+}
+.user-details .input-box .details{
+display: block;
+font-weight: 500;
+margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left:15px ;
+    font-size: 16px;
+    border-bottom-width: 2px ;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+ .user-details .input-box .country {
+    margin-bottom: 15px;
+}
+
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    bottom: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg,#71b7e6,#9b59b6);
+}
